@@ -39,7 +39,7 @@
     <div class="bar" style="width: 0;"></div>
     <a class="icon-home image-icon" href="javascript:;" data-url="https://migrantalks.github.io"></a>
     <div title="播放/暂停" class="icon-play"></div>
-    <h3 class="subtitle">通过IDEA创建Spring Boot项目</h3>
+    <h3 class="subtitle">Spring Boot 启动方式</h3>
     <div class="social">
         <!--<div class="like-icon">-->
             <!--<a href="javascript:;" class="likeThis active"><span class="icon-like"></span><span class="count">76</span></a>-->
@@ -57,30 +57,27 @@
     <div class="section">
         <div class="article">
     <div class="main">
-        <h1 class="title">通过IDEA创建Spring Boot项目</h1>
+        <h1 class="title">Spring Boot 启动方式</h1>
         <div class="stuff">
-            <span>三月 19, 2019</span>
+            <span>三月 26, 2019</span>
             
   <ul class="post-tags-list"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/SpringBoot/">SpringBoot</a></li></ul>
 
 
         </div>
         <div class="content markdown">
-            <p>Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。通过这种方式，Spring Boot致力于在蓬勃发展的快速应用开发领域(rapid application development)成为领导者。</p>
-<ul>
-<li><p>选择Spring Initializr项<br><img src="/img/springboot/springboot1.png" alt="springboot1"></p>
+            <ul>
+<li><p>直接运行 Application.java<br><img src="/img/springboot/run1.png" alt="run1"></p>
 </li>
-<li><p>配置包名、描述。。。<br><img src="/img/springboot/springboot2.png" alt="springboot2"></p>
+<li><p>使用IDEA的Run / Debug模式运行<br><img src="/img/springboot/run2.png" alt="run2"></p>
+<p><img src="/img/springboot/run3.png" alt="run3"></p>
+<p><img src="/img/springboot/run4.png" alt="run4"></p>
 </li>
-<li><p>选择web，构建一个web项目<br><img src="/img/springboot/springboot3.png" alt="springboot3"></p>
+<li><p>在IDEA终端下 运行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mvn spring-boot:run</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>配置项目名、存放路径<br><img src="/img/springboot/springboot4.png" alt="springboot4"></p>
-</li>
-<li><p>创建一个Controller<br><img src="/img/springboot/Springboot5.png" alt="Springboot5"></p>
-</li>
-<li><p>运行Application.java main 方法<br><img src="/img/springboot/Springboot6.png" alt="Springboot6"></p>
-</li>
-<li><p>浏览器访问<br><img src="/img/springboot/springboot7.png" alt="springboot7"></p>
+<li><p>打包成jar文件运行访问</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">--打包成jar文件</span><br><span class="line">mvn clean package</span><br><span class="line"></span><br><span class="line">--运行jar文件</span><br><span class="line">java -jar demo-0.0.1-SNAPSHOT.jar</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 
